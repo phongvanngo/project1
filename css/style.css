@@ -1,93 +1,220 @@
-*{
-    margin:0px;
-    box-sizing:border-box;
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
 }
-html{
-    overflow:auto;
-    height: 1000px;
-    font-family: 'Slabo 27px', serif;
+
+html {
+  overflow: auto;
+  /* height: 1000px;
+  width:1100px; */
+  /* font-family: 'Slabo 27px', serif; */
+  background: url("/image/e1-london-0703.jpeg ") no-repeat 0 0px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
 }
-body{
-    background: url("/image/background.jpg") repeat 0 0px ;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width:100vw;
-    margin: 0;
-    padding:0;
-    position: relative;
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 
 
 /*clearfix */
-.clearfix::after{
-    clear:both;
-    content:"";
-    display:table;
-} 
-
-/* HEADER */
-
-.select {
-    display: flex;
-    justify-content: space-between;  
-   
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
-.center{
-    width:700px;
-    display:inline-block;
+/* HEADER  HOME TOURS VIDEO CONTACT ------------------------*/
+
+.select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  width: 500px;
+  display: inline-block;
 }
 
 header .left {
-  display:inline-block;
-  width:250px;
-  height:50px;
+  /*left space*/
+  display: inline-block;
+  width: 400px;
+  height: 30px;
 }
+
 header nav ul {
-    list-style: none;
+  list-style: none;
 }
 
+header nav ul li {
+  display: inline;
 
-header nav ul li{
-    display: inline; 
+}
+
+header ul li:hover {
+  opacity: 0.5;
+
 }
 
 header a {
-    color: white;
-    text-decoration:none;
-    font-size:25px;
-    font-weight: 2000;
-}   
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 2000;
+}
 
+.current {
+  color: rgb(254, 140, 77);
+}
 
+/* HEADER  HOME TOURS VIDEO CONTACT ------------------------*/
+
+/* section1   ARE YOU READY FOR MUSIKA LIVE SHOW -------------------------------*/
+section {
+  position: relative;
+}
+
+.ready {
+  font-size: 50px;
+  font-weight: 1000;
+  color: white;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  width: 900px;
+}
+
+.musika {
+  color: rgb(254, 140, 77);
+}
 
 .circle {
-    background-color: rgb(254, 140, 77); 
-    height : 300px;
-    width:300px;
-    border-radius: 200px;
-    margin:auto;
-    position:absolute;
-    top:400px;
-    right:00px;
-    left:600px;
-    bottom:300px;
+  background-color: rgb(254, 140, 77);
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  margin: auto;
+  position: absolute;
+  /*follow ready*/
+  top: -100px;
+  right: 00px;
+  left: 550px;
+  bottom: 0px;
+  margin: 0px;
 }
-.B{
-position:relative;
+
+
+
+
+/*--------------- text in cirle ----------- */
+.text {
+  position: relative;
+  bottom: 10px;
+}
+
+.BAREA {
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  top: 80px;
+  left: 60px;
+}
+
+.MUSICFESTIVAL {
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+  left: 70px;
+}
+
+.time {
+  font-size: 10px;
+  position: relative;
+  top: 15px;
+  left: 45px;
+}
+
+/* BUY TICKET -------------- */
+.ticket-circle {
+  background: white;
+  height: 20px;
+  width: 100px;
+  font-size: 10px;
+  position: relative;
+  left: 98px;
+  top: 30px;
+  border-radius: 20px;
+  padding: 0;
+}
+
+#buy-ticket {
+  font-size: 10px;
+  color: black;
+  position: relative;
+  left: 20px;
+  top: 4px;
+  opacity: 1;
+}
+
+#buy-ticket:hover {
+  opacity: 0.5;
+  color: rgb(254, 140, 77);
+}
+
+section a {
+  text-decoration: none;
 }
 
 
-.rec{
-    background-color:red;
-    height: 300px;
-    width: 300px;
-    position:absolute;
-    /*top:100px;
-    right:100px;
-    left:100px;
-    bottom:0px; */
+/* footer */
+.footer {
+  color: rgb(67, 100, 128);
+  background-color: black;
+  font-weight: 200;
+  height: 50px;
+  margin-top: 380px;
+  font-size: 15px;
 }
 
+.text-footer {
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 150px;
+}
+
+#TRENDING {
+  color: white;
+}
+
+
+
+/* BUY TICKET -------------- */
+/* text in cirle ----------- */
+
+/* hover */
+/* .button {
+  opacity: 0;
+  background: #ffffff;
+  border-radius: 30px;
+  width: 100%;
+  margin: auto;
+  box-shadow: black;
+  transition-duration: 2s;
+  transition-property: background, box-shadow;
+  transition-timing-function: ease-in;
+}
+
+.button:hover {
+  opacity: 1;
+} */
